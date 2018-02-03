@@ -1,0 +1,6 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^$ public/ [L]
+RewriteRule ((?s).*) https://www.coins-pump.pro/public/$1 [L,R=301]
+</IfModule>
